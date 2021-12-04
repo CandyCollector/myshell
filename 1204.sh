@@ -48,4 +48,7 @@ sed '表达式; 表达式'
 
 
 统计当前链接数：
+
+#!/bin/bash
+set -e
 ss -t |awk {'print $5'} |grep -v Address |uniq -c |sort -nr
