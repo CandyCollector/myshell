@@ -45,3 +45,7 @@ sed '表达式' | sed '表达式'
 等价于：
 
 sed '表达式; 表达式'
+
+
+统计当前链接数：
+ss -t |awk {'print $5'} |grep -v Address |uniq -c |sort -nr
