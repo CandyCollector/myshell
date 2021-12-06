@@ -4,5 +4,5 @@
 if rpm -q ${1} &>/dev/null; then
   echo "$1 已安装"
 else
-  echo "s2 未安装"
+  echo "$1 未安装"
 fi
