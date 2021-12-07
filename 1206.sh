@@ -14,6 +14,6 @@ do
     if [ `echo $line |awk -F ',' {'print $1'} |xargs useradd &>/dev/null`]; then 
         `echo $line |awk -F ',' {'print $2'} |passwd --stdin $1 >dev/null 2&>1`
     else
-        echo "used already exsis"
+        echo "used already exist"
     fi
 done < user.txt
